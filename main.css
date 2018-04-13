@@ -1,0 +1,72 @@
+body {
+margin: 0;
+padding: 0;   
+}
+.hide{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+.nav{
+    width: 100%;
+    background-color:#531F33;
+    overflow: hidden;
+}
+.nav a {
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    color: white;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.content {
+  padding: 0px;
+}
+.pOne{
+    background:
+  url(https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmdhEYX4JyKCojQ3WLM5W4fvPdXiLZ3yZqeMTSUTNZ5e3B);
+    background-size: cover;
+    background-position:top center;
+    height: 500px;
+    margin-top: -20px;
+}
+.pTwo{
+    background-color: #0A1624;
+    height: 500px
+}
+.pThree{
+    background-color: #242B35;
+    height: 500px
+}
+.pFour{
+    background-color: #0A1624;
+    height: 500px
+}
+p {
+    font-size: 22px;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #531F33;
+}
+a:hover {
+    text-decoration: none;
+    text-shadow: 0px 3px 3px #FF7256;
+}
+
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
