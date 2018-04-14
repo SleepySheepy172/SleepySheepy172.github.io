@@ -1,54 +1,112 @@
 body {
-margin: 0;
-padding: 0;   
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;  
 }
 .hide{
     display: none;
+}
+.show{
+    border: 3px solid black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    display: grid; 
 }
 ul{
     list-style: none;
 }
 .nav{
     width: 100%;
-    background-color:#531F33;
-    overflow: hidden;
+    background-color:#202B37;
+    grid-column: span 3;
+    grid-row: span 1;
 }
 .nav a {
-    display: block;
     float: left;
-    font-family: sans-serif;
-    color: white;
-    padding-right: 10px;
+    font-family: "Satisfy", cursive;
+    font-size: 22px;
+    color: #326468;
+    margin-top: -7px;
+    padding-right: 20px;
     padding-bottom: 10px;
-    padding-left: 10px;
-    text-decoration: none;
+    padding-left: 20px;
+    text-shadow: 0px 0px 5px #38021E;
 }
 .content {
   padding: 0px;
+  grid-column: span 3;
 }
 .pOne{
     background:
   url(https://steemit-production-imageproxy-upload.s3.amazonaws.com/DQmdhEYX4JyKCojQ3WLM5W4fvPdXiLZ3yZqeMTSUTNZ5e3B);
+   grid-column: span 3; 
     background-size: cover;
     background-position:top center;
-    height: 500px;
-    margin-top: -20px;
+    margin-top: 0px;
+    height: 600px;
+}
+.name{
+    color: #326468;
+    text-align: center;
+    background-color: #0E1014;
+    opacity: 0.8;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    text-shadow: 1px 1px 10px #38021E;
+}
+.picMe{
+    height: 200px;
+    border-radius: 100%;
+    border: 8px double #242B35; 
+    object-fit: cover;
+    margin: auto;
+    box-shadow: 0px 0px 18px rgba(96, 39, 112, 0.8);
+}
+.pic{
+    margin: auto;
 }
 .pTwo{
+    padding-top:30px; 
     background-color: #0A1624;
-    height: 500px
+    height: 500px;
 }
+.intro{ 
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: "Josefin Sans", Sans-Serif;
+    font-size: 20px;
+    color: #DA6955;
+    border: 8px double #242B35;
+    padding: 5px;
+}
+.totoro{
+    height: 300px;
+    border-radius: 100%;
+    border: 8px double #242B35; 
+    object-fit: cover;
+    margin: auto;
+}
+
 .pThree{
     background-color: #242B35;
-    height: 500px
+    height: 500px;
 }
 .pFour{
-    background-color: #0A1624;
-    height: 500px
+    background-color: #38021E;
+    height: 500px;
 }
 p {
     font-size: 22px;
-    color: #333;
+    color: #38021E;
 }
 a {
     text-decoration: none;
@@ -56,17 +114,22 @@ a {
 }
 a:hover {
     text-decoration: none;
-    text-shadow: 0px 3px 3px #FF7256;
+    text-shadow: 0px 1px 1px #38021E;
 }
 
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+h2{
+    font-size: 50px;
+    font-family: Satisfy;
 }
 
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    background-color: #FF7256;
+    font-family: "Josefin Sans", Sans-Serif;
+    color: #38021E;
+    grid-column: span 3;
+}
+footer a {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
