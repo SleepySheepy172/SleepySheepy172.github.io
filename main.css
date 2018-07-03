@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-rows: 45px 1fr;
+    grid-template-rows: minmax(45px,auto);
     grid-template-columns: 1fr 1fr 1fr;  
 }
 .hide{
@@ -16,9 +16,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.wrap{
-    display: grid; 
-}
+
 ul{
     list-style: none;
 }
@@ -30,7 +28,7 @@ ul{
 }
 .nav a {
     float: left;
-    font-family: "Satisfy", cursive;
+    font-family: "Josefin Sans", Sans-Serif;
     font-size: 22px;
     color: #326468;
     margin-top: -7px;
@@ -51,6 +49,7 @@ ul{
     background-position:top center;
     margin-top: 0px;
     height: 600px;
+    flex-direction: column;
 }
 .name{
     color: #326468;
@@ -71,17 +70,19 @@ ul{
     box-shadow: 0px 0px 18px rgba(96, 39, 112, 0.8);
 }
 .pic{
-    margin: auto;
+    margin: 20px;
 }
 .pTwo{
     padding-top:30px; 
+    padding-bottom: 30px;
     background-color: #0A1624;
-    height: 500px;
+    height: auto;
+    flex-wrap: wrap;
 }
 .intro{ 
     text-align: center;
     width: 50%;
-    margin: auto;
+    margin: 20px;
     font-family: "Josefin Sans", Sans-Serif;
     font-size: 20px;
     color: #DA6955;
